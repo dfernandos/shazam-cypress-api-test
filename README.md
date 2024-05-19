@@ -72,6 +72,11 @@ Feature: Get Top Songs by artists from Shazam API
     Given I hit the url for get top artists api endpoint
     When I pass the url in the request with an invalid API key
     Then I receive an error response code
+
+  Scenario: Verify the response when no query parameters are provided
+    Given I hit the url for get top artists api endpoint
+    When I pass the url in the request with no query paramether
+    Then I receive a 204 response code
 ```
 
 ## Continuous Integration
