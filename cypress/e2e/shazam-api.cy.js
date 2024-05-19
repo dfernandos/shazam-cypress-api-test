@@ -39,7 +39,6 @@ describe('Test /artist/get-top-songs from Shazam', () => {
       expect(response.status).to.equal(200);
 
       const songs = response.body.data;
-      cy.log(songs);
       expect(songs).to.be.an('array').that.has.lengthOf(10);
     });
   });
@@ -111,4 +110,16 @@ describe('Test /artist/get-top-songs from Shazam', () => {
       });
     });
   });
+
+  it.only('Verify the response when no query parameters are provided', () => {
+    cy.request({
+      method: 'GET',
+      url: BASEURL,
+      headers: headers,
+      failOnStatusCode: false
+    }).then((response) => {
+      expect(response.status).to.equal(204);
+    });
+  });
+  
 });
