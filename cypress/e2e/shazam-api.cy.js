@@ -111,7 +111,7 @@ describe('Test /artist/get-top-songs from Shazam', () => {
     });
   });
 
-  it.only('Verify the response when no query parameters are provided', () => {
+  it('Verify the response when no query parameters are provided', () => {
     cy.request({
       method: 'GET',
       url: BASEURL,
@@ -121,5 +121,5 @@ describe('Test /artist/get-top-songs from Shazam', () => {
       expect(response.status).to.equal(204);
     });
   });
-  
+
 });
