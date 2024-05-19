@@ -2,7 +2,7 @@
 
 # Shazam api test
 
-![example workflow](https://github.com/dfernandos/Shazam-api-test/actions/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/dfernandos/shazam-cypress-api-test/actions/workflows/main.yml/badge.svg)
 
 The purpose of this assessment is to test a public api. It was choose the Shazam api to be tested. 
 
