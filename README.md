@@ -11,7 +11,7 @@ The purpose of this assessment is to test a public api. It was choose the Shazam
 
 ## Prerequisites:
 
-1. (version 16.14.2 or later)
+1. Node (version 16.14.2 or later)
 2. Visual Studio code
 
 ## Getting Started
